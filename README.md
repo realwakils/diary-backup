@@ -1,5 +1,5 @@
 # diary-backup is a backup solution for WriteDiary
-The purpouse of this project is to backup any diary from WriteDiary.com, encrypt it and then put it somewhere safe.
+The purpose of this project is to backup any diary from WriteDiary.com, encrypt it and then put it somewhere safe.
 
 First a 'diary_pass' environment variable should be set. You should store this somewhere else safe. Personally I store mine in my preferred locked password manager 1Password.
 
