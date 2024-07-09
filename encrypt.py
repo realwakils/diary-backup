@@ -26,7 +26,7 @@ def create_entry(entry):
 	f.close()
 
 def encrypt():
-	shutil.make_archive(TEMP_PATH, 'zip', TEMP_PATH)
+	shutil.make_archive("temp", 'zip', TEMP_PATH)
 	pyAesCrypt.encryptFile("temp.zip", f"diary_backup_{CURRENT_TIME}.zip.aes", diary_pass)
 
 def cleanup():
