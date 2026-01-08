@@ -7,7 +7,8 @@ Whenever you wish to take a backup (should be about every 6 months), follow thes
 
 1. Login to writediary.com, and paste the script in 'script.js' into the web developer console.
 2. Move the 'diary_backup.json' generated in download folder into this project. Make sure to delete the 'diary_backup'.json from your download folder.
-3. Run 'encrypt.py' and when finished, put the newly generated encrypted file somewhere safe. Personally I use Google Drive (however since a diary is so personal, these extra encryption steps are taken)
+3. Setup the env variable 'diary_pass' to whatever password you want to be able to always decrypt the backups. Perhaps save it in a password manager.
+4. Run 'encrypt.py' and when finished, put the newly generated encrypted file somewhere safe. Personally I use Google Drive (however since a diary is so personal, these extra encryption steps are taken)
 DISCLAIMER: Make sure that the folder is actually able to be decrypted, and that the text itself is intact.
 
 In the rare scenario that you would wish to decrypt your diary backup, please put the '.aes' backup in this path and run 'decrypt.py' and provide the file name of the desired backup.

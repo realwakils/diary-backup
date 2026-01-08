@@ -23,7 +23,7 @@ function handleNote(note) {
 
 async function handlePage(i) {
 	console.log(`Fetching page ${i}...`);
-	const page = await fetch(`https://www.writediary.com/notes?&p=${i}`);
+	const page = await fetch(`https://writediary.com/notes?&p=${i}`);
 	const text = await page.text();
 	const parser = new DOMParser();
 	const doc = parser.parseFromString(text, 'text/html');
